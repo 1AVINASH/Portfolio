@@ -11,6 +11,7 @@ body {
   margin-top: 0px;
 }
 .maincontainer {
+  font-weight: lighter;
   display: flex;
   position: absolute;
   align-self: center;
@@ -27,6 +28,7 @@ body {
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .thecard {
+  font-weight: lighter;
   position: relative;
   top: 0;
   left: 0;
@@ -74,6 +76,8 @@ body {
   box-shadow: 10px 10px 8px 5px #1b0000;
   background-repeat: no-repeat;
   background-color: rgb(102, 16, 16);
+  border: 1.5px solid rgb(82, 0, 0);
+  font-weight: lighter;
 }
 .thefront:hover {
   opacity: 100%;
@@ -96,6 +100,7 @@ body {
   text-align: center;
   transform: rotateY(180deg);
   box-shadow: 10px 10px 8px 0px #1a0000;
+  border: 1.5px solid rgb(0, 0, 46);
 }
 a {
   text-decoration: none;
@@ -120,17 +125,17 @@ a {
   color: rgb(255, 255, 255);
   font-size: 14px;
   text-align: left;
-  font-weight: lighter;
+  /* font-weight: 1000px; */
   /* text-shadow: 3px 3px 3px rgb(255, 0, 0); */
 }
 
 .thefront img {
-  width: 100%;
+  width: 80%;
   top: 0;
   position: absolute;
   top: 75px;
-  width: 200px;
-  margin-left: 20px;
+  width: 180px;
+  margin-left: 30px;
   box-shadow: 8px 8px 8px black;
 }
 
