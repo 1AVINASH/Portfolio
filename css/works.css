@@ -117,9 +117,8 @@ a {
   text-align: center;
 }
 
-.thefront p,
-.theback p {
-  margin-top: 100px;
+.thefront p {
+  margin-top: 95px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 25px;
   color: rgb(255, 255, 255);
@@ -129,6 +128,15 @@ a {
   /* text-shadow: 3px 3px 3px rgb(255, 0, 0); */
 }
 
+.theback p {
+  margin-top: 90px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: left;
+  font-weight: lighter;
+}
 .thefront img {
   width: 80%;
   top: 0;
