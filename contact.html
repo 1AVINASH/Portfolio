@@ -16,12 +16,19 @@
         <a href = "contact.html" style = "border-bottom: 2px solid rgb(255, 255, 255);color: rgb(255, 231, 254); box-shadow: 0 0 10px #ffab4b, 0 0 40px #ffab4b, 0 0 80px #ffab4b; background-color: rgb(255, 188, 43);">Contact</a>
         <a href = "works.html">Works</a>    
     </div></header>
-    
         <div class = "form">
+            <form id ="contact-form" method="post" action="contacthandler.php">
             <input type="text" name="name" required>
             <label for ="name" class = "label-name">
              <span class = "content-name">Name</span>
-             </label>
+             </label><br><br>
+            <input type="text" name="email" required>
+            <label for ="email" class = "label-email">
+             <span class = "content-name">Email</span>
+             </label><br><br>
+             <textarea name="message" class="form-control" placeholder="Message" rows = "10" style="width:100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></textarea><br><br>
+             <input type="submit" class = "submit" value="SEND MESSAGE">
+            </form>
         </div>
     </p>
 
