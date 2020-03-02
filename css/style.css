@@ -90,18 +90,6 @@ div.images img:hover {
   background-color: #ffffff;
 }
 
-/* .round {
-    position: fixed;
-    position: absolute;
-    left: 54%;
-    top: 62%;
-    border: 2px solid #fff;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-   
-} */
-
 #cta {
   width: 100%;
   cursor: pointer;
@@ -175,4 +163,40 @@ div.images img:hover {
   animation-delay: 0.2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.resume {
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  display: inline-block;
+  background-color: rgb(255, 255, 239);
+  padding-top: 4px;
+  top: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-height: 100px;
+  text-decoration: underline;
+  line-height: 0px;
+  border-radius: 2px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all ease 0.2s;
+}
+.resume:hover {
+  font-size: 15px;
+  padding-top: 8px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(182, 241, 182);
+  border-radius: 25px;
+}
+.resumeContainer:hover {
+  transform: scale(1.2x);
+}
+
+.resumeContainer a:hover {
+  transform: scale(1.2x);
 }

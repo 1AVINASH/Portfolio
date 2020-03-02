@@ -1,0 +1,1 @@
+document.write('<div>This Site has not been optimized for mobile.</div>')
