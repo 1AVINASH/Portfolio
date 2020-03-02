@@ -104,8 +104,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
-
+a:hover {
+  color: rgb(255, 139, 7);
+}
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h1,
 .theback h1 {
