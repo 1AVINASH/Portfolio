@@ -189,8 +189,8 @@ div.images img:hover {
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 12px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(182, 241, 182);
+  color: rgb(0, 100, 116);
+  background-color: rgb(235, 241, 182);
   border-radius: 25px;
 }
 .resumeContainer:hover {
