@@ -8,119 +8,212 @@
 
     <link rel="stylesheet" href="css/navBars.css" />
     <link rel="stylesheet" href="css/works.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style media="screen" type="text/css">
+      .layer1_class {
+        z-index: 1;
+        top: 100px;
+        left: 0px;
+        visibility: visible;
+      }
+      .layer2_class {
+        z-index: 2;
+        top: 10px;
+        left: 10px;
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      function downLoad() {
+        if (document.all) {
+          document.all["layer1"].style.visibility = "hidden";
+          document.all["layer2"].style.visibility = "visible";
+        } else if (document.getElementById) {
+          node = document.getElementById("layer1").style.visibility = "hidden";
+          node = document.getElementById("layer2").style.visibility = "visible";
+        }
+      }
+    </script>
   </head>
-  <body>
-    <header>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="links">Home</a>
-        <a href="about.html">About</a>
-        <a href="https://avinashsingh24.000webhostapp.com/contact.html">Contact</a>
-        <a href="works.html"
-          style="border-bottom: 2px solid rgb(255, 255, 255);color: rgb(255, 231, 254);box-shadow: 0 0 10px #ffab4b, 0 0 40px #ffab4b, 0 0 80px #ffab4b; background-color: rgb(255, 188, 43);"
-          >Works</a
+  <body onload="downLoad()">
+    <div id="layer1" class="layer1_class">
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
       </div>
-    </header>
-    <br /><br /><br /><br />
-    <div class="maincontainer">
-      <div class="extra">
-      <div class="thecard" id="thecard">        
-        <div class="thefront" id="thefront">
-          <h1>App</h1>
-          <img
-            src="images/Vimor App/02tUBoMXZNkeMShKHOH6q3.webp"
-            style="border: 1px solid rgb(102, 16, 16);"/> <br>
-          <p style="font-weight: lighter;">Built Using: Unity Engine <br>Made during my internship at Meraki, Bangalore. Build an infomatory app for a handloom museum. The app was run on a windows touchscreen system. Collaborated with designers from Delhi.</p>
-        </div>
-
-        <div class="theback" id="theback">
-          <h1></h1>
-          <p>
-            <a href="https://github.com/1AVINASH/VimorApp">Click here to visit the github</a><br><br><a href="https://avinashsingh24.carbonmade.com/projects/7171367"> Click here to view photos</a>
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="extra">
-      <div class="thecard" id="thecard">
-        <div class="thefront">
-          <h1>Thesis in virtual reality</h1>
-          <img
-          src="images/WIP/6.png"
-          style="border: 1px solid rgb(102, 16, 16);"/> <br>
-          <p> Built Using: Unity Engine, Blender, Photoshop <br>Constructed a 3d model in blender of a ferrous alloy plant. After applying materials and textures, the model was exported in Unity Engine wherein the development work was done. </p>
-        </div>
-
-        <div class="theback">
-          <h1></h1>
-          <p>
-            Click here to visit the github  <br><br><a href="https://avinashsingh24.carbonmade.com/projects/7180164"> Click here to view photos</a>
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="extra">
-      <div class="thecard" id="thecard">
-        <div class="thefront">
-          <h1>Daily Modeling</h1>
-          <img
-          src="images/renders/1t4yhyEpQnMbmTUKXGWhZs.webp"
-          style="border: 1px solid rgb(102, 16, 16);"/> <br>
-          <p>Built Using: Blender, Photoshop <br>
-            Made 1 scene daily for a week. In the span of 8-10 hours, scenes were completely modeled, textured, and rendered.Different types of scenes were created, such as character models, vehicles, architecture visualizations, etc.
-          </p>
-        </div>
-
-        <div class="theback">
-          <h1></h1>
-          <p>
-            Click here to visit the github  <br><br><a href="https://avinashsingh24.carbonmade.com/projects/7180164"> Click here to view photos</a>
-          </p>
-        </div>
-        </div>
-      </div>
-      <div class="extra">
-      <div class="thecard" id="thecard">
-        <div class="thefront">          
-          <h1>Apps and Games</h1>
-          <img
-          src="images/apps using WF/Untitled-1 copy.jpg"
-          style="border: 1px solid rgb(102, 16, 16);"/> <br>
-          <p>
-            Built Using: C#, Windows Forms<br>
-            As a personal project, I decided to make apps like tic tac toe, calculator, and snake game using windows forms. .net framework was used 
-
-          </p>
-        </div>
-
-        <div class="theback">
-          <h1></h1>
-          <p>
-            Click here to visit the github <br><br> <a href="https://avinashsingh24.carbonmade.com/projects/7194707"> Click here to view photos</a>
-          </p>
-        </div>
-        </div>
-      </div>
-      <div class="extra">
-      <div class="thecard" id="thecard">
-        <div class="thefront">
-          <h1>3d Games</h1>
-          <img
-          src="images/WIP/jDQxwEsUeTTb7Dv5NNW32B.webp"
-          style="border: 1px solid rgb(102, 16, 16);"/> <br>
-          <p>
-            Built Using : Unity Engine, C#, Blender, Photoshop<br>
-            Decided to make a 3d endless running game using Unity. Blender was used to create models. Still under development
-          </p>
-        </div>
-
-        <div class="theback">
-          <h1></h1>
-          <p>
-            Click here to visit the github <br><br> <a href="https://avinashsingh24.carbonmade.com/projects/7180164"> Click here to view photos</a>
-          </p>
-        </div>
-      </div>
+      <script>
+        $(window).on("load", function() {
+          $(".loader-wrapper").fadeOut("slow");
+        });
+      </script>
     </div>
+    <div id="layer2" class="layer2_class">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="links">Home</a>
+          <a href="about.html">About</a>
+          <a href="https://avinashsingh24.000webhostapp.com/contact.html"
+            >Contact</a
+          >
+          <a
+            href="works.html"
+            style="border-bottom: 2px solid rgb(255, 255, 255);color: rgb(255, 231, 254);box-shadow: 0 0 10px #ffab4b, 0 0 40px #ffab4b, 0 0 80px #ffab4b; background-color: rgb(255, 188, 43);"
+            >Works</a
+          >
+        </div>
+      </header>
+      <br /><br /><br /><br />
+
+      <div class="maincontainer">
+        <div class="extra">
+          <div class="thecard" id="thecard">
+            <div class="thefront" id="thefront">
+              <h1>App</h1>
+              <img
+                src="images/Vimor App/02tUBoMXZNkeMShKHOH6q3.webp"
+                style="border: 1px solid rgb(102, 16, 16);"
+              />
+              <br />
+              <p style="font-weight: lighter;">
+                Built Using: Unity Engine <br />Made during my internship at
+                Meraki, Bangalore. Build an infomatory app for a handloom
+                museum. The app was run on a windows touchscreen system.
+                Collaborated with designers from Delhi.
+              </p>
+            </div>
+
+            <div class="theback" id="theback">
+              <h1></h1>
+              <p>
+                <a href="https://github.com/1AVINASH/VimorApp"
+                  >Click here to visit the github</a
+                ><br /><br /><a
+                  href="https://avinashsingh24.carbonmade.com/projects/7171367"
+                >
+                  Click here to view photos</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="extra">
+          <div class="thecard" id="thecard">
+            <div class="thefront">
+              <h1>Thesis in virtual reality</h1>
+              <img
+                src="images/WIP/6.png"
+                style="border: 1px solid rgb(102, 16, 16);"
+              />
+              <br />
+              <p>
+                Built Using: Unity Engine, Blender, Photoshop <br />Constructed
+                a 3d model in blender of a ferrous alloy plant. After applying
+                materials and textures, the model was exported in Unity Engine
+                wherein the development work was done.
+              </p>
+            </div>
+
+            <div class="theback">
+              <h1></h1>
+              <p>
+                Click here to visit the github <br /><br /><a
+                  href="https://avinashsingh24.carbonmade.com/projects/7180164"
+                >
+                  Click here to view photos</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="extra">
+          <div class="thecard" id="thecard">
+            <div class="thefront">
+              <h1>Daily Modeling</h1>
+              <img
+                src="images/renders/1t4yhyEpQnMbmTUKXGWhZs.webp"
+                style="border: 1px solid rgb(102, 16, 16);"
+              />
+              <br />
+              <p>
+                Built Using: Blender, Photoshop <br />
+                Made 1 scene daily for a week. In the span of 8-10 hours, scenes
+                were completely modeled, textured, and rendered.Different types
+                of scenes were created, such as character models, vehicles,
+                architecture visualizations, etc.
+              </p>
+            </div>
+
+            <div class="theback">
+              <h1></h1>
+              <p>
+                Click here to visit the github <br /><br /><a
+                  href="https://avinashsingh24.carbonmade.com/projects/7180164"
+                >
+                  Click here to view photos</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="extra">
+          <div class="thecard" id="thecard">
+            <div class="thefront">
+              <h1>Apps and Games</h1>
+              <img
+                src="images/apps using WF/Untitled-1 copy.jpg"
+                style="border: 1px solid rgb(102, 16, 16);"
+              />
+              <br />
+              <p>
+                Built Using: C#, Windows Forms<br />
+                As a personal project, I decided to make apps like tic tac toe,
+                calculator, and snake game using windows forms. .net framework
+                was used
+              </p>
+            </div>
+
+            <div class="theback">
+              <h1></h1>
+              <p>
+                Click here to visit the github <br /><br />
+                <a
+                  href="https://avinashsingh24.carbonmade.com/projects/7194707"
+                >
+                  Click here to view photos</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="extra">
+          <div class="thecard" id="thecard">
+            <div class="thefront">
+              <h1>3d Games</h1>
+              <img
+                src="images/WIP/jDQxwEsUeTTb7Dv5NNW32B.webp"
+                style="border: 1px solid rgb(102, 16, 16);"
+              />
+              <br />
+              <p>
+                Built Using : Unity Engine, C#, Blender, Photoshop<br />
+                Decided to make a 3d endless running game using Unity. Blender
+                was used to create models. Still under development
+              </p>
+            </div>
+
+            <div class="theback">
+              <h1></h1>
+              <p>
+                Click here to visit the github <br /><br />
+                <a
+                  href="https://avinashsingh24.carbonmade.com/projects/7180164"
+                >
+                  Click here to view photos</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <a href = "Renders.html"></a><a href="App.html"></a><a href="WIP.html"></a> -->
@@ -134,6 +227,11 @@
     
 </div> -->
   </body>
-  <footer><script language="javascript" type="text/javascript" 
-    src="footer.txt"></script></footer>
+  <footer>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="footer.txt"
+    ></script>
+  </footer>
 </html>

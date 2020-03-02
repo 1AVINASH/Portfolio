@@ -8,18 +8,53 @@
     <title>Document</title>
     <link rel = "stylesheet" href = "css/style.css">
     <link rel = "stylesheet" href = "css/navBars.css">
-
+    
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style media="screen" type="text/css">
+    .layer1_class {
+      z-index: 1;
+      top: 100px;
+      left: 0px;
+      visibility: visible;
+    }
+    .layer2_class {
+      z-index: 2;
+      top: 10px;
+      left: 10px;
+      visibility: hidden;
+    }
+  </style>
+  <script>
+    function downLoad() {
+if (document.all) {
+  document.all["layer1"].style.visibility = "hidden";
+  document.all["layer2"].style.visibility = "visible";
+} else if (document.getElementById) {
+  node = document.getElementById("layer1").style.visibility = "hidden";
+  node = document.getElementById("layer2").style.visibility = "visible";
+}
+}
+  </script>
 </head>
-<body>
+<body onload="downLoad()">
+    <div id="layer1" class="layer1_class">
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+          </div>
+          <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
+      </div> <div id="layer2" class="layer2_class">
    <header> <div class = "topnav" id = "myTopnav">        
     <a href = "index.html" style = "border-bottom: 2px solid rgb(255, 231, 254); color: rgb(255, 231, 254); box-shadow: 0 0 10px #ffab4b, 0 0 40px #ffab4b, 0 0 80px #ffab4b; background-color: rgb(255, 188, 43);">Home</a>
     <a href = "about.html">About</a>
     <a href = "https://avinashsingh24.000webhostapp.com/contact.html">Contact</a>
     <a href = "works.html">Works</a>    
 </div></header>
-<script language="javascript" type="text/javascript" 
-src="header.txt"></script>
-    
+
+
     <div class="content"><h1 style="font-size: 60px; color: rgb(244, 250, 164);font-weight: 400;"> Hi!</h1><h1 style="font-size: 40px; color: rgb(164, 250, 214);font-weight: 400;"> I am Avinash Singh</h1><h3 style="font-size: 25px; color: rgb(174, 250, 164); font-weight: 400;">I am a VR/Software developer and artist. </h3>  <br>
     <p>
         <div class="center-con">
@@ -30,11 +65,10 @@ src="header.txt"></script>
             </div>
         </div>
     </div></a></p><br><br>
-    <div class="resumeContainer"><a href ="Avinash_Singh_s_Resume.pdf" target="_blank" style="color:rgb(0, 0, 0); "><div class = "resume"><h2 style="font-weight: 600;">Resume</h2></div></a></div></div></div>
+    <div class="resumeContainer"><a href ="Avinash_Singh_s_Resume.pdf" target="_blank" style="color:rgb(0, 0, 0); "><div class = "resume"><h2 style="font-weight: 600;">Resume</h2></div></a></div></div></div></div>
     </div>
     <footer><script language="javascript" type="text/javascript" 
         src="footer.txt"></script></footer>
 </body>
 
-<script src = "JS/Script.JS"></script>
 </html>
