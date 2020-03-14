@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+  z-index: 2;
   outline: none;
   background: rgb(19, 19, 19);
   /* padding: 3em; */
@@ -24,10 +25,12 @@ body {
 }
 
 .parallax-window {
+  z-index: 2;
   min-height: 350px;
   width: 100%;
 }
 .parallaxText {
+  z-index: 2;
   font-size: 1.2em;
   font-weight: 800;
   padding: 50px;
