@@ -260,7 +260,7 @@ div.images img:hover {
     transform: translateX(0px) scale(1);
     color: rgb(255, 255, 255);
   }
-  66% {
+  67% {
     background-color: rgb(255, 188, 23);
     transform: translateX(10px) scale(0.9);
     color: rgb(255, 255, 255);
